@@ -1,0 +1,186 @@
+/* Les classes suivantes permettent de positionner les éléments sur la page (flexbox)
+Elles sont triées de haut en bas */
+
+#haut_page
+{
+   list-style: none;
+   padding: 0;
+   margin-right : 15px;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   align-items: center;
+}
+
+#centre_page
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: fixed;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#bas_page
+{
+	position: fixed;
+	bottom: 0;
+	left: -1px;
+	width: 100%;
+	background-color: rgb(242, 242, 242);
+	border-top: 1px solid #e4e4e4;
+}
+
+#bas_page_ligne1
+{
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   text-indent: 12px;
+   margin-left : 20px;
+   height: 40px;
+}
+
+#bas_page_ligne2
+{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   border-top: 1px solid #e4e4e4;
+   height: 40px;
+}
+
+#bas_page_ligne2_gauche
+{
+   list-style: none;
+   padding: 0;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   align-items: center;
+   margin-left : 20px;
+}
+
+#bas_page_ligne2_droite
+{
+   list-style: none;
+   padding: 0;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   align-items: center;
+   margin-right : 15px;
+}
+
+
+
+/* Les classes suivantes, c'est de la mise en forme
+Elles sont triées de haut en bas */
+
+.element_liste_haut
+{
+	margin: 0px 9px;
+	font-family: arial,sans-serif;
+	font-size: 13px;
+}
+
+p, a
+{
+	color: black;
+	font-family: arial,sans-serif;
+	font-size: 13px;
+	text-decoration: none;
+	text-align: center;
+}
+
+a:hover
+{
+	opacity: .85;
+	text-decoration: underline;
+}
+
+.carre
+{
+	opacity: .6;
+}
+
+.carre:hover
+{
+	opacity: 1;
+}
+
+.bouton_connexion a
+{
+    color: white;
+    text-decoration: none;
+	border: 1px solid #4285f4;
+    font-weight: bold;
+    outline: none;
+    background: #4387fd;
+    display: inline-block;
+    line-height: 28px;
+    padding: 0 12px;
+    border-radius: 2px;
+}
+
+.bouton_connexion a:hover
+{
+    box-shadow: 0 1px 0 rgba(0,0,0,.15);
+    opacity: 1;
+}
+
+.texte_recherche
+{
+	height: 24px;
+	width: 528px;
+	padding: 5px 12px 5px 12px;
+	font-size: 16px;
+}
+
+.boutons_recherche
+{
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.bouton_recherche:hover
+{
+	border: 1px solid rgba(0,0,0,.15);
+	color: black;
+	opacity: 0.7;
+}
+
+.bouton_recherche
+{
+	background-color: #f8f8f8;
+	width: 140px;
+	height: 12px;
+	margin: 0px 8px;
+	border-radius: 2px;
+	border: 1px solid #f2f2f2;
+    color: #757575;
+    font-family: arial,sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px 0px;
+}
+
+.pays
+{
+	color: rgba(0,0,0,.54);
+    font-size: 14px;
+}
+
+.element_liste_bas a
+{
+	margin: 0px 12px;
+	font-family: arial,sans-serif;
+	font-size: 13px;
+	color: rgba(0,0,0,.54);
+}
